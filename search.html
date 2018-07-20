@@ -1,0 +1,97 @@
+
+<html>
+
+<style>
+body
+{
+	  background-image: url("spots.jpg");
+	  background-repeat:no-repeat; background-size: cover;  top:0;left:0; margin:auto;
+	 /* background-color:#4c6a92;*/
+}
+input[type=text], select
+ {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]
+ {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+	cursor:pointer;
+}
+
+input[type=reset] {
+    width: 20%;
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+	width:20%;
+}
+
+
+div {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%;
+	padding:10px;
+	
+
+}
+</style>
+<body>
+<div>
+<h2 align=center >SEARCH STUDENT DETAILS</h2>
+
+<table border="0" align=center>
+
+<form action="search.php" method="POST" align=center>
+<br /> <br />
+Enter the Profile ID of the requester to be searched<input type="text" id="search" name="search"/>
+<br/>
+<input type="submit" value="Submit" id="f1"/>
+<br/>
+</br>
+</form>
+<form action="search1.php" method="POST" align=center>
+<br /> <br />
+Enter the Profile ID of the volunteer to be searched<input type="text" id="search" name="search"/>
+<br/>
+<input type="submit" value="Submit" id="f2"/>
+<br/>
+
+</table> 
+<br/>
+<br/ >
+
+   
+	<label><input type="button" value="Cancel" onclick=" <script type='text/javascript'> window.location.replace(\'admin_page.html\'); </script>";/> </label>         
+
+
+
+
+  
+  </form>
+</div>
+
+</body>
+</html>

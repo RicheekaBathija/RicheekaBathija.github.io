@@ -1,0 +1,94 @@
+
+<html>
+
+<style>
+body
+{
+	  background-image: url("spots.jpg");
+	  background-repeat:no-repeat; background-size: cover;  top:0;left:0; margin:auto;
+	 /* background-color:#4c6a92;*/
+}
+input[type=text], select
+ {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]
+ {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+	cursor:pointer;
+}
+
+input[type=reset] {
+    width: 20%;
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+div {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%;
+	padding:10px;
+	
+
+}
+</style>
+<body>
+<div>
+<h2 align=center >VOLUNTEER</h2>
+<h4>Please enter the route you will be taking.
+<form action="vol.php" method="POST" align=center>
+<table border="0" align=center>
+<br /> <br />
+<tr><th>Starting point</th></th><th>Checkpoint 1</th><th>Checkpoint 2</th><th>Checkpoint 3</th><th>Checkpoint 4</th><th>Destination</th></tr></label></th>
+<tr><th><input type="text" maxsize="30" name="start" required id="start"/></th><th><input type="text" maxsize="30" name="ma" required id="ma"/></th><th><input type="text" maxsize="30" name="as" required id="as"/></th><th><input type="text" maxsize="30" name="asd" required id="asd"/></th><th><input type="text" maxsize="30" name="asdf" required id="asdf"/></th><th><input type="text" maxsize="30" name="dest" required id="dest"/></th></tr></table></tr><br /></table>
+<table border="0" align=center>
+<tr><th>Seats available:</th><th><select style="width: 50px;"name="seat";><option value="1">1</option><option value="2">2</option><option value=
+"3">3</option><option value="4">4</option></select></th></tr>
+<tr><th>Time Scheduled:</th><th>
+<input type="time" name="usr_time" required id="usr_time"/>
+</th></tr>
+<tr><th><br />Date Scheduled:</th><th><br />
+<input type="date" name="usr_date" required id="usr_date"/>
+</th></tr>
+
+</table> 
+<br/>
+<br/ >
+
+    <label><input type="submit" value="Submit"/></label><br />
+	<label><input type="reset" value="Cancel" onclick="window.location.href='Home_page.html';"> </label>         
+
+
+
+
+  
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+
+h1 {color: white; font-family:palatino; font-size:3em; letter-spacing:1px; text-align:center;}
+#sub{color:white;font-family:'times new roman'; letter-spacing:1px; text-align:center;}
+
+div.descrip{color:black;font-family:Helvetica;font-size:1.1em;letter-spacing:2px; text-align:justify; line-height:1.2em; border:2px solid white; padding:1em; 
+position:absolute; top:35%; left:5%; background-color:white; width:250px;}
+
+div.descrip1{color:black;font-family:Helvetica;font-size:1.1em;letter-spacing:2px; text-align:justify; line-height:1.2em; border:2px solid white; padding:1em; 
+position:absolute; top:65%;left:5%; width:250px; background-color:white;}
+ 
+ .start{color:black;font-family:Helvetica; font size:1.1em; position:absolute; top:35em; left:10%;}
+ 
+
+
+
+ body
+{background-image: url("bg.jpg");
+	  background-repeat:no-repeat; background-size: cover; background-position: center center; top:0;left:0; margin:auto;
+	 /* background-color:#4c6a92;*/
+
+
+}
+
+	
+/*navbar*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+
+
+li {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+	text-decoration:none;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: grey;
+}
+
+
+
+#volunteer_button{   
+	padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+	color:white;
+	background-color:green;
+}

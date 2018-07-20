@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>
+Request</title>
+
+<style>
+body
+{
+	  background-image: url("spots.jpg");
+	  background-repeat:no-repeat; background-size: cover;  top:0;left:0; margin:auto;
+	 /* background-color:#4c6a92;*/
+}
+
+input[type=text], select
+ {
+    width: 100%;
+    padding: 6px 6px;
+    border: 1px solid #ccc;
+	padding:5px;
+}
+
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+	border-radius:4px;
+}
+
+
+#reset{background-color:red;}
+
+
+div {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%;
+	padding:10px;
+	
+
+}
+</style>
+
+</head>
+<body>
+<div>
+<h2 align=center> REQUEST A DROP  </h2>
+<h4 align=center> Enter the pick-up point and destination to view available routes. </h4>
+<form action="request1.php" method="POST" align="center">
+<table cellspacing="2" align="center">
+<tr><th>Pick-up point</th><th>Destination</th></tr>
+<tr><th><label><input type="text" name="pick" id="pick" maxsize="10"/></label></th><th><label><input type="text" name="dest" id="dest" maxsize="10"/></label></th></tr>
+</table>
+<br /> <br />
+<button id="submit" type="Submit" value="Request">Request Drop </button> <br />
+<button id="reset" type="Reset" value="clear fields">Clear Fields</button>
+</div>
+</form>
+</body>
+</html>
