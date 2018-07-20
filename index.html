@@ -1,0 +1,88 @@
+
+<html>
+<head>
+<title>First page</title>
+<link rel="stylesheet" type="text/css" href="First_page.css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet" />
+
+<script type="text/javascript" src="pattern.js">
+</script>
+</head>
+
+<body>
+
+<h1>BMSCE VEHICLE POOLING</h1> 
+<h3 id="sub">Connecting students and faculty across Bangalore.</h3>
+
+
+<p class="start"> Login or Sign up to get started!</p>
+
+
+
+<button type="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="Login_Button">Login</button>
+<button type="button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="signup">Sign Up</button>
+
+
+<div id="id01" class="modal">
+
+  
+  <form class="modal-content animate" action="login2.php" method="POST">
+
+    <div class="container">
+		<h1 id="login_heading"> Login </h1>
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="p-name" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="p-pass" required>
+        
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+
+  
+  <form class="modal-content animate" action="signup.php" method="POST">
+
+    <div class="container">
+		<h1 id="login_heading"> Sign up </h1>
+		
+		<label><b>Name</b></label>
+      <input type="text" placeholder="Enter your name" name="p-name" id="p-name" required onchange="f1();">
+		
+      <label><b>UserID</b></label>
+      <input type="text" placeholder="Enter User ID" name="p-id" id="p-id" required >
+	  
+	   <label><b>Email ID</b></label>
+      <input type="text" placeholder="Enter Email-ID" name="p-email" id="p-email" required onchange="f3();">
+	   
+	   <label><b>Address</b></label>
+      <input type="text" placeholder="Enter Address" name="p-addr" id="p-addr" required onchange="f4();">
+	  
+	  <label><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="p-phno" id="p-phno" required onchange="f5();" >
+      
+	  <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="p-pass" id="p-pass" required>
+      <br />
+  
+      <button type="submit">Sign up</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+
+</form>
+
+</body>
+</html>
